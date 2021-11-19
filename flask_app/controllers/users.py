@@ -4,12 +4,9 @@ from flask_app.models.user import User
 from flask_bcrypt import Bcrypt
 bcrypt = Bcrypt(app)
 
-
 @app.route("/")
 def reg_and_log():
     return render_template("index.html")
-
-
 
 @app.route("/register",methods=["POST"])
 def create_user():
@@ -28,8 +25,6 @@ def create_user():
     else:
         return redirect("/")
 
-
-
 @app.route("/welcome")
 def user_page():
     if "user_id" not in session:
@@ -41,8 +36,6 @@ def user_page():
         }
         user = User.get_user(data)
         return render_template("dashboard.html", user=user)
-
-
 
 @app.route("/login",methods=["POST"])
 def login():
@@ -57,12 +50,14 @@ def login():
         return redirect("/")
     # if passwords match, set user_id into session
     session["user_id"] = user_in_db.id
-    return redirect("/dashboard")
+    return redirect("/welcome")
 
-
+@app.route("/categories")
+def sweet():
+    return render_template("category.html")
 
 @app.route("/logout")
 def logout():
     session.clear()
-    flash("logged out!", "login")
+    flash("Logged out!", "login")
     return redirect("/")

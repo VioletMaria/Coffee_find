@@ -1,23 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,400;1,100;1,200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{url_for('static', filename='styles/styles.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/category.css')}}">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ user.first_name }}'s Dashboard</title>
+    <title>Category Name Will Go Here</title>
 </head>
 <body>
-    <div id="dash-header">
-        <h2 class="dash-h2">Find your flavor {{ user.first_name + " " + user.last_name }}</h2>
-        <a class="no-style-link" href="/logout">
-            <h1 class="main-logo" >coffeeFind</h1>
-        </a>
+    <div id="category-back">
+        <div class="logo-right">
+            <a class="no-style-link" href="/">
+                <h1 class="main-logo" >coffeeFind</h1>
+            </a>
+        </div>
+        <div id="result-center">
+            <div class="cat-desc">
+                <h2 class="results">Category Name</h2>
+                <div class="searchbar">
+                    <input class="search" type="text" placeholder="search">
+                    <button type="submit" class="search-btn">
+                        <i class="material-icons">search</i>
+                    </button>
+                </div>
+            </div>
+            <div class="result-contain">
+                <div class="img-desc">
+                    <img class="result-img" src="https://images.pexels.com/photos/312420/pexels-photo-312420.jpeg?cs=srgb&dl=pexels-chevanon-photography-312420.jpg&fm=jpg" alt="coffee">
+                    <div class="desc">
+                        <h2 class="result-h2">Latte Cappacce</h2>
+                        <p class="result-text">You thought you knew coffee? T'was only your imagination. You won't know true coffee until you've slurped this decadency. Coffee, more coffee and even some frothed milk, mixed with the fresh taste of hazelnut.</p>
+                    </div>
+                </div>
+                <div class="img-desc">
+                    <img class="result-img" src="https://images.pexels.com/photos/1233528/pexels-photo-1233528.jpeg?cs=srgb&dl=pexels-di-bella-coffee-1233528.jpg&fm=jpg" alt="coffee">
+                    <div class="desc">
+                        <h2 class="result-h2">Double Molten Core Espresso</h2>
+                        <p class="result-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aperiam, quod officiis ut odio deserunt eius beatae magni maxime sint.</p>
+                    </div>
+                </div>
+                <div class="img-desc">
+                    <img class="result-img" src="https://images.pexels.com/photos/302905/pexels-photo-302905.jpeg?cs=srgb&dl=pexels-chevanon-photography-302905.jpg&fm=jpg" alt="coffee">
+                    <div class="desc">
+                        <h2 class="result-h2">Caramel Salted Cappucino</h2>
+                        <p class="result-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aperiam, quod officiis ut odio deserunt eius beatae magni maxime sint.</p>
+                    </div>
+                </div>
+                <div class="img-desc">
+                    <img class="result-img" src="https://images.pexels.com/photos/1193335/pexels-photo-1193335.jpeg?cs=srgb&dl=pexels-archie-binamira-1193335.jpg&fm=jpg" alt="coffee">
+                    <div class="desc">
+                        <h2 class="result-h2">Iced Soy Latte Fratatay</h2>
+                        <p class="result-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aperiam, quod officiis ut odio deserunt eius beatae magni maxime sint.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="dash-categories">
+    <h2 class="category-header">Pick another flavor</h2>
+    <div class="categories">
         <a class="no-style-link" href="/categories">
             <div class="category-card">
                 <h1>Sweet</h1>
@@ -55,13 +99,13 @@
         </a>
     </div>
     <footer>
-        <div class="dash-foot">
-            <div class="dash-foot-left">
+        <div class="foot">
+            <div class="foot-left">
                 <p>If you'd like to get in contact, feel free to reach out at:</p>
                 <a href="">coffeefind@gmail.com</a>
                 <p>999-999-999</p>
             </div>
-            <div class="dash-foot-right">
+            <div class="foot-right">
                 <img src="https://img.icons8.com/fluency/48/000000/facebook-new.png"/>
                 <img src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"/>
                 <img src="https://img.icons8.com/fluency/48/000000/twitter.png"/>
