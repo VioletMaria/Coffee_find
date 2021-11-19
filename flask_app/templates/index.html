@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,400;1,100;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/styles.css')}}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeFind</title>
+</head>
+<body>
+    <div id="login-back">
+        <div id="header">
+            <h3>Welcome to</h3>
+            <h1>CoffeeFind</h1>
+            <p>your guide to all things coffee</p>
+        </div>
+        <div id="login-contain">
+            <form class="register-card" action="/register" method="post">
+                <h2 class="header-h2">Register</h2>
+                {% with messages = get_flashed_messages(category_filter="register") %}
+                    {% if messages %}
+                        {% for message in messages %}
+                            <p class="warnings">{{ message }}</p>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+                <input type="text" name="first_name" placeholder="first name">
+                <input type="text" name="last_name" placeholder="last name">
+                <input type="email" name="email" placeholder="email">
+                <input type="password" name="password" placeholder="password">
+                <input type="password" name="confirm" placeholder="confirm password">
+                <button class="submit-btn" type="submit">Register</button>
+            </form>
+            <form class="login-card"  action="/login" method="post">
+                <h2 class="header-h2">Login</h2>
+                {% with messages = get_flashed_messages(category_filter="login") %}
+                    {% if messages %}
+                        {% for message in messages %}
+                            <p class="warnings">{{ message }}</p>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+                <input type="email" name="email" placeholder="email">
+                <input type="password" name="password" placeholder="password">
+                <button class="submit-btn" type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <h2 class="category-header">Find your flavor</h2>
+    <div class="categories">
+        <div class="category-card">
+            <h1>Sweet</h1>
+            <img src="https://images.pexels.com/photos/6205620/pexels-photo-6205620.jpeg?cs=srgb&dl=pexels-tim-douglas-6205620.jpg&fm=jpg" alt="caramel coffee">
+            <p class="card-text">In the mood for something sweet?</p>
+        </div>
+        <div class="category-card">
+            <h1 class="cat-h1">Bitter</h1>
+            <img src="https://images.pexels.com/photos/192730/pexels-photo-192730.jpeg?cs=srgb&dl=pexels-david-bares-192730.jpg&fm=jpg" alt="caramel coffee">
+            <p class="card-text">In the mood for something sweet?</p>
+        </div>
+        <div class="category-card">
+            <h1>Foriegn</h1>
+            <img src="https://images.pexels.com/photos/2299028/pexels-photo-2299028.jpeg?cs=srgb&dl=pexels-engin-akyurt-2299028.jpg&fm=jpg" alt="caramel coffee">
+            <p class="card-text">In the mood for something sweet?</p>
+        </div>
+        <div class="category-card">
+            <h1>Dietary</h1>
+            <img src="https://images.pexels.com/photos/10177093/pexels-photo-10177093.jpeg?cs=srgb&dl=pexels-sena-10177093.jpg&fm=jpg" alt="caramel coffee">
+            <p class="card-text">In the mood for something sweet?</p>
+        </div>
+        <div class="category-card">
+            <h1>Drip</h1>
+            <img src="https://images.pexels.com/photos/6036281/pexels-photo-6036281.jpeg?cs=srgb&dl=pexels-nikita-belokhonov-6036281.jpg&fm=jpg" alt="caramel coffee">
+            <p class="card-text">In the mood for something sweet?</p>
+        </div>
+    </div>
+    <div id="fav-center">
+        <h2 class="favorites">Our Favorites</h2>
+        <div class="fav-contain">
+            <div class="img-desc-top-left">
+                <img class="fav-img" src="https://images.pexels.com/photos/4552171/pexels-photo-4552171.jpeg?cs=srgb&dl=pexels-roman-odintsov-4552171.jpg&fm=jpg" alt="matcha">
+                <div class="desc">
+                    <h2 class="fav-h2">Matcha</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aperiam, quod officiis ut odio deserunt eius beatae magni maxime sint.</p>
+                </div>
+            </div>
+            <div class="img-desc-top-right">
+                <img class="fav-img" src="https://images.pexels.com/photos/4552171/pexels-photo-4552171.jpeg?cs=srgb&dl=pexels-roman-odintsov-4552171.jpg&fm=jpg" alt="matcha">
+                <div class="desc">
+                    <h2 class="fav-h2">Matcha</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aperiam, quod officiis ut odio deserunt eius beatae magni maxime sint.</p>
+                </div>
+            </div>
+            <div class="img-desc-bottom-left">
+                <img class="fav-img" src="https://images.pexels.com/photos/4552171/pexels-photo-4552171.jpeg?cs=srgb&dl=pexels-roman-odintsov-4552171.jpg&fm=jpg" alt="matcha">
+                <div class="desc">
+                    <h2 class="fav-h2">Matcha</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aperiam, quod officiis ut odio deserunt eius beatae magni maxime sint, velit illo quisquam praesentium culpa corrupti itaque unde, a consequuntur?</p>
+                </div>
+            </div>
+            <div class="img-desc-bottom-right">
+                <img class="fav-img" src="https://images.pexels.com/photos/4552171/pexels-photo-4552171.jpeg?cs=srgb&dl=pexels-roman-odintsov-4552171.jpg&fm=jpg" alt="matcha">
+                <div class="desc">
+                    <h2 class="fav-h2">Matcha</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aperiam, quod officiis ut odio deserunt eius beatae magni maxime sint, velit illo quisquam praesentium culpa corrupti itaque unde, a consequuntur?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="foot-left">
+                <p>If you'd like to get in contact, feel free to reach out at:</p>
+                <a href="">coffeefind@gmail.com</a>
+                <p>999-999-999</p>
+            </div>
+            <div class="foot-right">
+                <img src="https://img.icons8.com/fluency/48/000000/facebook-new.png"/>
+                <img src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"/>
+                <img src="https://img.icons8.com/fluency/48/000000/twitter.png"/>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
