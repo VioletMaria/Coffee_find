@@ -43,7 +43,7 @@
 <p align="center">Category page upon selecting a specific category. Selection with gradient hover feature. (Search feature and category name to come.)
  </p>
 
-![CoffeeFind Category Selection](![CoffeeFind Category Page](https://cdn.discordapp.com/attachments/955962175002910723/956241149339791540/coffeeFind_category_page.png)
+![CoffeeFind Category Selection](https://cdn.discordapp.com/attachments/955962175002910723/956241259117293628/coffeeFind_category_page_selections.png)
 
 <p align="center">Category selection with gradient hover feature.
  </p>
