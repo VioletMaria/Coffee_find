@@ -27,23 +27,23 @@
 
 <!-- ABOUT THE PROJECT -->
 
-![CoffeeFind Dash](https://cdn.discordapp.com/attachments/955962175002910723/956240886780538940/coffeeFind_dash.png)
+![CoffeeFind Dash](https://media.discordapp.net/attachments/955962175002910723/956240886780538940/coffeeFind_dash.png?ex=687f1f79&is=687dcdf9&hm=d35e9ea1b4cd69497ade5d2b3b0dd1c7b3344e78dd1350339e4ae0c210f3771f&=&format=webp&quality=lossless&width=1872&height=789)
 <p align="center">Dashboard with login and registration for users to store and save desired coffee recipes.
  </p>
 
-![CoffeeFind Categories](https://cdn.discordapp.com/attachments/955962175002910723/956240948382273666/coffeeFind_category.png)
+![CoffeeFind Categories](https://media.discordapp.net/attachments/955962175002910723/956240948382273666/coffeeFind_category.png?ex=687f1f88&is=687dce08&hm=733118c8335c2dfec6b29aaaf1aff672a1abaf77e65eda207886651beea4d060&=&format=webp&quality=lossless&width=1754&height=864)
 <p align="center">Flavor category selection with gradient hover feature.
  </p>
 
-![CoffeeFind Suggestions](https://cdn.discordapp.com/attachments/955962175002910723/956241116548698173/coffeeFind_suggestions.png)
+![CoffeeFind Suggestions](https://media.discordapp.net/attachments/955962175002910723/956241116548698173/coffeeFind_suggestions.png?ex=687f1fb0&is=687dce30&hm=62a0f351fe34f1337d88ecc46af03fa1b3b6243c0c3048a7c2c8802813af4656&=&format=webp&quality=lossless&width=1754&height=864)
 <p align="center">Site suggestions for delicious recipes.
  </p>
 
-![CoffeeFind Category Page](https://cdn.discordapp.com/attachments/955962175002910723/956241149339791540/coffeeFind_category_page.png)
+![CoffeeFind Category Page](https://media.discordapp.net/attachments/955962175002910723/956241149339791540/coffeeFind_category_page.png?ex=687f1fb8&is=687dce38&hm=5c3116af320584de7b4196a8ca202e081071e6f4511d957ace474e3025281912&=&format=webp&quality=lossless&width=1752&height=864)
 <p align="center">Category page upon selecting a specific category. Selection with gradient hover feature. (Search feature and category name to come.)
  </p>
 
-![CoffeeFind Category Selection](https://cdn.discordapp.com/attachments/955962175002910723/956241259117293628/coffeeFind_category_page_selections.png)
+![CoffeeFind Category Selection]([https://cdn.discordapp.com/attachments/955962175002910723/956241259117293628/coffeeFind_category_page_selections.png](https://media.discordapp.net/attachments/955962175002910723/956241259117293628/coffeeFind_category_page_selections.png?ex=687f1fd2&is=687dce52&hm=79c558bf5c59a839827ac6f53b04475df94d81ce366db979fbc3ab6244aed61b&=&format=webp&quality=lossless&width=1754&height=864))
 
 <p align="center">Category selection with gradient hover feature.
  </p>
